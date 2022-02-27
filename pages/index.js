@@ -6,7 +6,8 @@ import Container from "../components/container"
 import Card from "../components/card"
 import PostComment from "../containers/post-comment"
 
-export default function Home() {
+export default function Home({post}) {
+
   return (
     <div>
       <Head>
@@ -26,3 +27,15 @@ export default function Home() {
     </div>
   )
 }
+
+
+
+// export async function getServerSideProps() {
+//   // Fetch data from external API
+//   const res = await fetch(`https://.../data`)
+//   const data = await res.json()
+
+//   // Pass data to the page via props
+//   return { props: { data} }
+// }
+

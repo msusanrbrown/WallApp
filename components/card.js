@@ -106,3 +106,4 @@ export default function Comment({like, dislike}) {
     </Card>
   );
 }
+
